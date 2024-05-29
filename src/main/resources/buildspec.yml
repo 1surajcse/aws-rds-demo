@@ -10,5 +10,5 @@ phases:
         -echo Build completed Successfully
 artifacts:
   files:
-    - target/aws-rds-demo.war
+    - target/aws_app.jar
   discard-paths: yes
