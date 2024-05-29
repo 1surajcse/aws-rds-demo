@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Entering the build phase
+      - mvn clean package
+    post_builds:
+      commands:
+        -echo Build completed Successfully
+artifacts:
+  files:
+    - target/aws-rds-demo.war
+  discard-paths: yes
